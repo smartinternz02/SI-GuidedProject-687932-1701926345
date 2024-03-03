@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='predict.css') }}">
+</head>
+<body>
+    <h1>Prediction Page</h1>
+    <form action="{{ url_for('submit') }}" method="post">
+        <label for="infoavail">infoavail:</label>
+        <input type="text" name="infoavail" required><br>
+
+        <label for="housecost">House Cost:</label>
+        <input type="text" name="housecost" required><br>
+
+        <label for="schoolquality">School Quality:</label>
+        <input type="text" name="schoolquality" required><br>
+
+        <label for="policetrust">police trust:</label>
+        <input type="text" name="policetrust" required><br>
+
+        <label for="streetquality">street quality:</label>
+        <input type="text" name="streetquality" required><br>
+
+        <label for="events">events:</label>
+        <input type="text" name="events" required><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
